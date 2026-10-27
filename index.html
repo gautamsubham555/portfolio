@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subham | Software Development Engineer (SDE) & AI / Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Subham - B.Tech CSE Undergraduate, Software Development Engineer (SDE), Full-Stack Developer, AI/ML Engineer, and Codeforces Pupil (1242). Explore projects, machine learning pipelines, and competitive coding milestones.">
+  <meta name="keywords" content="Subham, Software Engineer, SDE Portfolio, Full-Stack Developer, AI ML Engineer, Data Scientist, Machine Learning, Python, C++, Java, Codeforces, Delhi Skill and Entrepreneurship University">
+  <meta name="author" content="Subham">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Subham | Software Development Engineer & AI / ML Specialist">
+  <meta property="og:description" content="Explore Subham's software engineering portfolio: ML pipelines, full-stack systems, competitive programming achievements, and Java internship at EI Systems.">
+  <meta property="og:url" content="https://subham.dev">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              cyanLight: '#22d3ee',
+              sky: '#38bdf8',
+              skyLight: '#7dd3fc',
+              indigo: '#6366f1',
+              violet: '#a855f7',
+              emerald: '#10b981',
+              emeraldLight: '#34d399',
+              amber: '#f59e0b',
+              dark: '#0a1128',
+              card: 'rgba(14, 25, 48, 0.65)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030712'/><text x='50%' y='65%' font-size='55' font-family='sans-serif' font-weight='800' fill='%2306b6d4' text-anchor='middle'>S</text><circle cx='80' cy='28' r='10' fill='%2310b981'/></svg>">
+</head>
+
+<body class="bg-[#0a1128] text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 relative min-h-screen overflow-x-hidden">
+
+  <!-- Multi-Color Gradient Mesh Background System (Light Sky Blue, Electric Cyan, Radiant Violet, Emerald) -->
+  <div id="mesh-bg" class="bg-mesh-container" aria-hidden="true">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+    <div class="mesh-orb mesh-orb-4"></div>
+  </div>
+
+  <!-- Interactive Cyber Canvas Background -->
+  <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-55"></canvas>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-cyan-400 rounded-lg p-1" aria-label="Subham.dev Home">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 via-indigo-600 to-emerald-500 p-0.5 shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all duration-300">
+          <div class="w-full h-full bg-[#0d1b38] rounded-[10px] flex items-center justify-center">
+            <span class="font-heading font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">S</span>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-bold text-lg text-white tracking-tight flex items-center gap-1.5">
+            Subham<span class="text-cyan-400">.dev</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          </span>
+          <span class="text-[10px] text-slate-400 font-mono tracking-wider">SDE &bull; AI / ML</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2 px-3 py-1.5 rounded-full bg-slate-900/70 border border-white/10 backdrop-blur-xl shadow-xl shadow-black/40" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link px-3.5 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors rounded-full hover:bg-white/5">About</a>
+        <a href="#sde-fullstack" class="nav-link px-3.5 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors rounded-full hover:bg-white/5">SDE & Full-Stack</a>
+        <a href="#ai-datascience" class="nav-link px-3.5 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors rounded-full hover:bg-white/5">AI & Data Science</a>
+        <a href="#competitive-coding" class="nav-link px-3.5 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors rounded-full hover:bg-white/5">Competitive Coding</a>
+        <a href="#experience" class="nav-link px-3.5 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors rounded-full hover:bg-white/5">Experience</a>
+        <a href="#contact" class="nav-link px-3.5 py-1.5 text-xs lg:text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors rounded-full hover:bg-white/5">Contact</a>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="flex items-center gap-2.5">
+        <!-- Background Palette Cycle Button -->
+        <button id="theme-palette-btn" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 hover:border-sky-400/50 text-slate-200 hover:text-white text-xs font-medium transition-all shadow-sm group focus:outline-none focus:ring-2 focus:ring-sky-400" title="Cycle Multi-Color Background Palette">
+          <span class="w-3.5 h-3.5 rounded-full bg-gradient-to-tr from-sky-400 via-violet-400 to-emerald-400 group-hover:rotate-90 transition-transform duration-300"></span>
+          <span class="hidden sm:inline font-mono text-[11px] text-sky-300" id="current-palette-label">Aurora</span>
+        </button>
+
+        <!-- Download Resume Trigger -->
+        <button data-open-modal="resume-modal" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs lg:text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span>Download Resume</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden mt-3 px-4 py-5 rounded-2xl bg-slate-900/95 border border-slate-800 backdrop-blur-2xl shadow-2xl flex flex-col gap-3">
+      <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-200 hover:text-cyan-400 rounded-lg hover:bg-slate-800/60">About</a>
+      <a href="#sde-fullstack" class="px-3 py-2 text-sm font-medium text-slate-200 hover:text-cyan-400 rounded-lg hover:bg-slate-800/60">SDE & Full-Stack</a>
+      <a href="#ai-datascience" class="px-3 py-2 text-sm font-medium text-slate-200 hover:text-emerald-400 rounded-lg hover:bg-slate-800/60">AI & Data Science</a>
+      <a href="#competitive-coding" class="px-3 py-2 text-sm font-medium text-slate-200 hover:text-amber-400 rounded-lg hover:bg-slate-800/60">Competitive Coding</a>
+      <a href="#experience" class="px-3 py-2 text-sm font-medium text-slate-200 hover:text-cyan-400 rounded-lg hover:bg-slate-800/60">Experience & Education</a>
+      <a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-200 hover:text-cyan-400 rounded-lg hover:bg-slate-800/60">Contact</a>
+      <div class="pt-2 border-t border-slate-800">
+        <button data-open-modal="resume-modal" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Download Resume
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-24 sm:pt-28">
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="min-h-[92vh] flex items-center px-4 sm:px-8 py-12 lg:py-16">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <!-- Availability Tag -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 backdrop-blur-md shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="text-xs font-medium text-slate-300">Open for SDE & ML Internships &bull; Class of 2027</span>
+          </div>
+
+          <!-- Headline -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight font-heading text-white">
+              Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-emerald-400">Subham</span> 👋
+            </h1>
+
+            <!-- Dynamic Role Typewriter -->
+            <div class="h-10 sm:h-12 flex items-center text-lg sm:text-2xl font-mono text-cyan-300 font-semibold">
+              <span class="text-slate-400 mr-2">&gt;</span>
+              <span id="typewriter-text" class="border-r-2 border-cyan-400 pr-1 animate-pulse"></span>
+            </div>
+          </div>
+
+          <!-- Role Badges Grid -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-cyan-950/70 text-cyan-300 border border-cyan-500/30 flex items-center gap-1.5 shadow-sm">
+              💻 Software Development Engineer (SDE)
+            </span>
+            <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-indigo-950/70 text-indigo-300 border border-indigo-500/30 flex items-center gap-1.5 shadow-sm">
+              ⚡ Full-Stack & Systems Developer
+            </span>
+            <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-emerald-950/70 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 shadow-sm">
+              🤖 AI / ML Engineer
+            </span>
+            <span class="px-3 py-1 rounded-lg text-xs font-semibold bg-teal-950/70 text-teal-300 border border-teal-500/30 flex items-center gap-1.5 shadow-sm">
+              📊 Data Scientist
+            </span>
+          </div>
+
+          <!-- Bio -->
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+            B.Tech Computer Science Undergraduate (<span class="text-white font-medium">2023–2027</span>) at 
+            <span class="text-cyan-300 font-medium">Delhi Skill and Entrepreneurship University</span> with 
+            <span class="text-emerald-300 font-medium">CGPA 7.1/10</span>. Passionate about architecting end-to-end scalable software solutions, optimizing machine learning pipelines, and mastering core data structures & algorithms.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#sde-fullstack" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+              View Projects
+            </a>
+            <a href="#about" class="px-6 py-3 rounded-xl text-sm font-semibold bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-cyan-500/40 transition-all duration-300 flex items-center gap-2">
+              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Explore Skills
+            </a>
+            <button data-open-modal="resume-modal" class="px-6 py-3 rounded-xl text-sm font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 transition-all duration-300 flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Resume PDF
+            </button>
+          </div>
+
+          <!-- Direct Platform Profiles (GitHub, LinkedIn, Codeforces, LeetCode, CodeChef) -->
+          <div class="pt-4 border-t border-slate-800/80">
+            <span class="text-xs uppercase font-mono tracking-wider text-slate-400 block mb-3">Connect & Coding Handles</span>
+            <div class="flex flex-wrap items-center gap-2.5">
+              
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/subham130304/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-white transition-all flex items-center gap-2 text-xs font-medium group">
+                <svg class="w-4 h-4 text-[#0a66c2]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74Z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/50 text-slate-300 hover:text-white transition-all flex items-center gap-2 text-xs font-medium group">
+                <svg class="w-4 h-4 text-slate-100" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <!-- Codeforces (Highlighted Pupil) -->
+              <a href="https://codeforces.com/profile/gautamsubham555" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-cyan-950/40 hover:bg-cyan-900/60 border border-cyan-500/40 text-cyan-300 hover:text-white transition-all flex items-center gap-2 text-xs font-medium group shadow-sm">
+                <svg class="w-4 h-4 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4.5 7.5a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-3 0V9a1.5 1.5 0 0 1 1.5-1.5zm7.5-4a1.5 1.5 0 0 1 1.5 1.5v13a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm7.5 7a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-3 0v-6a1.5 1.5 0 0 1 1.5-1.5z"/>
+                </svg>
+                <span>Codeforces <span class="text-[10px] bg-cyan-500/20 px-1.5 py-0.5 rounded text-cyan-300 font-mono">1242</span></span>
+              </a>
+
+              <!-- LeetCode -->
+              <a href="https://leetcode.com/u/Subhamthegreat007/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-amber-500/40 text-slate-300 hover:text-amber-300 transition-all flex items-center gap-2 text-xs font-medium group">
+                <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c.058-.087.122-.171.195-.248l5.405-5.788A1.38 1.38 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                </svg>
+                <span>LeetCode</span>
+              </a>
+
+              <!-- CodeChef -->
+              <a href="https://www.codechef.com/users/canny_team_49" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-amber-500/40 text-slate-300 hover:text-white transition-all flex items-center gap-2 text-xs font-medium group">
+                <span class="w-4 h-4 rounded-full bg-amber-600/30 flex items-center justify-center font-bold text-[10px] text-amber-400">CC</span>
+                <span>CodeChef</span>
+              </a>
+
+              <!-- Copy Email Quick Action -->
+              <button data-copy-text="gautamsubham777@gmail.com" data-copy-label="Subham's Email" class="px-3.5 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-emerald-500/40 text-slate-300 hover:text-emerald-300 transition-all flex items-center gap-2 text-xs font-medium" title="Click to copy email">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span>gautamsubham777@gmail.com</span>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Interactive Developer Terminal -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl relative">
+            
+            <!-- Terminal Header -->
+            <div class="bg-slate-900/90 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+                <span class="text-xs font-mono text-slate-400 ml-2">subham-session.zsh</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1 text-[11px] font-mono text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/40">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span> Live v2.6
+                </span>
+              </div>
+            </div>
+
+            <!-- Terminal Tabs -->
+            <div class="flex border-b border-slate-800 bg-slate-950/60 text-xs font-mono">
+              <button class="terminal-tab px-4 py-2 text-cyan-400 bg-slate-800 border-b-2 border-cyan-400 transition-colors" data-target="code-config">
+                subham.config.ts
+              </button>
+              <button class="terminal-tab px-4 py-2 text-slate-400 hover:text-slate-200 transition-colors" data-target="code-ml">
+                pipeline.py
+              </button>
+              <button class="terminal-tab px-4 py-2 text-slate-400 hover:text-slate-200 transition-colors" data-target="code-cli">
+                interactive_cli
+              </button>
+            </div>
+
+            <!-- Screen 1: Config -->
+            <div id="code-config" class="terminal-code p-5 font-mono text-xs sm:text-[13px] leading-relaxed text-slate-300 overflow-x-auto space-y-1">
+              <div><span class="text-indigo-400">export const</span> <span class="text-cyan-300">developerProfile</span> = {</div>
+              <div class="pl-4"><span class="text-slate-400">name:</span> <span class="text-emerald-300">'Subham'</span>,</div>
+              <div class="pl-4"><span class="text-slate-400">degree:</span> <span class="text-emerald-300">'B.Tech Computer Science (2023–2027)'</span>,</div>
+              <div class="pl-4"><span class="text-slate-400">institution:</span> <span class="text-emerald-300">'Delhi Skill & Entrepreneurship Univ'</span>,</div>
+              <div class="pl-4"><span class="text-slate-400">cgpa:</span> <span class="text-amber-300">7.1</span>,</div>
+              <div class="pl-4"><span class="text-slate-400">domains:</span> [</div>
+              <div class="pl-8"><span class="text-cyan-300">'Software Development Engineering (SDE)'</span>,</div>
+              <div class="pl-8"><span class="text-indigo-300">'Full-Stack Web & REST APIs'</span>,</div>
+              <div class="pl-8"><span class="text-emerald-300">'AI / Machine Learning & Data Science'</span>,</div>
+              <div class="pl-8"><span class="text-amber-300">'Competitive Programming'</span></div>
+              <div class="pl-4">],</div>
+              <div class="pl-4"><span class="text-slate-400">handles:</span> { <span class="text-slate-400">linkedin:</span> <span class="text-cyan-300">'subham130304'</span>, <span class="text-slate-400">codeforces:</span> <span class="text-cyan-300">'gautamsubham555'</span>, <span class="text-slate-400">leetcode:</span> <span class="text-amber-300">'Subhamthegreat007'</span>, <span class="text-slate-400">codechef:</span> <span class="text-amber-300">'canny_team_49'</span>, <span class="text-slate-400">github:</span> <span class="text-emerald-300">'gautamsubham555'</span> },</div>
+              <div class="pl-4"><span class="text-slate-400">codeforces:</span> { <span class="text-slate-400">rank:</span> <span class="text-cyan-300">'Pupil'</span>, <span class="text-slate-400">maxRating:</span> <span class="text-amber-300">1242</span> },</div>
+              <div class="pl-4"><span class="text-slate-400">experience:</span> <span class="text-emerald-300">'Java Intern @ EI Systems (AICTE)'</span>,</div>
+              <div class="pl-4"><span class="text-slate-400">status:</span> <span class="text-emerald-400">'Ready for High-Impact SDE/ML Roles'</span></div>
+              <div>};</div>
+            </div>
+
+            <!-- Screen 2: ML Pipeline -->
+            <div id="code-ml" class="terminal-code hidden p-5 font-mono text-xs sm:text-[13px] leading-relaxed text-slate-300 overflow-x-auto space-y-1">
+              <div><span class="text-slate-500"># End-to-End Diagnostic ML Pipeline</span></div>
+              <div><span class="text-indigo-400">from</span> sklearn.pipeline <span class="text-indigo-400">import</span> Pipeline</div>
+              <div><span class="text-indigo-400">from</span> sklearn.preprocessing <span class="text-indigo-400">import</span> StandardScaler</div>
+              <div><span class="text-indigo-400">from</span> sklearn.impute <span class="text-indigo-400">import</span> SimpleImputer</div>
+              <div><span class="text-indigo-400">from</span> sklearn.linear_model <span class="text-indigo-400">import</span> LogisticRegression</div>
+              <div class="pt-2"><span class="text-cyan-300">diabetes_pipeline</span> = Pipeline([</div>
+              <div class="pl-4">(<span class="text-emerald-300">'imputer'</span>, SimpleImputer(strategy=<span class="text-amber-300">'median'</span>)),</div>
+              <div class="pl-4">(<span class="text-emerald-300">'scaler'</span>, StandardScaler()),</div>
+              <div class="pl-4">(<span class="text-emerald-300">'classifier'</span>, LogisticRegression(max_iter=<span class="text-amber-300">1000</span>, C=<span class="text-amber-300">1.2</span>))</div>
+              <div>])</div>
+              <div class="pt-2"><span class="text-cyan-300">diabetes_pipeline</span>.fit(X_train, y_train)</div>
+              <div><span class="text-emerald-400">print</span>(<span class="text-emerald-300">f"Model Accuracy: {accuracy:.4f} | ROC-AUC: 0.82"</span>)</div>
+            </div>
+
+            <!-- Screen 3: Interactive Mini CLI -->
+            <div id="code-cli" class="terminal-code hidden p-5 font-mono text-xs sm:text-[13px] leading-relaxed text-slate-300 flex flex-col h-64">
+              <div class="text-slate-400 mb-2">Welcome to Subham's interactive shell. Type <span class="text-cyan-400 font-bold">help</span> to view commands.</div>
+              <div id="terminal-cli-output" class="flex-1 overflow-y-auto space-y-1 pr-1"></div>
+              <div class="mt-2 flex items-center gap-2 pt-2 border-t border-slate-800">
+                <span class="text-cyan-400">subham@dev:~$</span>
+                <input type="text" id="terminal-cli-input" placeholder="try: skills, projects, contact..." class="bg-transparent text-emerald-300 focus:outline-none flex-1 font-mono text-xs" autocomplete="off">
+              </div>
+            </div>
+
+            <!-- Terminal Footer Status Bar -->
+            <div class="px-4 py-2 bg-slate-900/90 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Git: main (clean)
+              </span>
+              <span>UTF-8 &bull; C++ / Java / Python</span>
+            </div>
+
+          </div>
+
+          <!-- Highlight Metric Stats Row -->
+          <div class="grid grid-cols-3 gap-3 mt-4">
+            <div class="glass-panel p-3.5 rounded-xl text-center border-slate-800">
+              <span class="block text-xl font-extrabold text-cyan-400 font-heading">1242</span>
+              <span class="text-[11px] text-slate-400 font-medium">Codeforces Pupil</span>
+            </div>
+            <div class="glass-panel p-3.5 rounded-xl text-center border-slate-800">
+              <span class="block text-xl font-extrabold text-emerald-400 font-heading">7.1 / 10</span>
+              <span class="text-[11px] text-slate-400 font-medium">B.Tech CGPA</span>
+            </div>
+            <div class="glass-panel p-3.5 rounded-xl text-center border-slate-800">
+              <span class="block text-xl font-extrabold text-indigo-400 font-heading">AICTE</span>
+              <span class="text-[11px] text-slate-400 font-medium">Java Intern</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         ABOUT & CORE COMPETENCIES SECTION
+         ========================================================================== -->
+    <section id="about" class="py-20 px-4 sm:px-8 border-t border-slate-900 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider font-mono">
+            <span>⚙️ Technical Architecture & Core CS</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Engineering Rigor &amp; Computational Foundations
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Balancing algorithmic depth with real-world full-stack systems and machine learning data pipelines.
+          </p>
+        </div>
+
+        <!-- Skills Filter Bar -->
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-500 text-slate-950 border border-emerald-400 shadow-lg shadow-emerald-500/20 transition-all" data-filter="all">
+            All Technical Competencies
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="core-cs">
+            ⚙️ Core Computer Science
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="languages">
+            💻 Programming Languages
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="ai-ds">
+            🤖 AI, ML & Data Science
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="fullstack">
+            🌐 Full-Stack & Developer Tools
+          </button>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- 1. Software Engineering & Core CS -->
+          <div class="skill-card glass-panel-interactive p-6 rounded-2xl relative group" data-skill-cat="core-cs">
+            <div class="w-12 h-12 rounded-xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-2xl text-cyan-400 mb-4 group-hover:scale-110 transition-transform">
+              ⚙️
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 flex items-center justify-between">
+              Core CS & SDE
+              <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">Foundations</span>
+            </h3>
+            <p class="text-slate-400 text-xs mb-4">
+              Fundamental principles powering scalable, reliable, and fault-tolerant software systems.
+            </p>
+            <div class="space-y-2.5">
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Data Structures &amp; Algorithms</span>
+                <span class="text-[11px] text-slate-400">Arrays, Linked Lists, Trees, Graphs, DP, Sorting</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Object-Oriented Programming (OOP)</span>
+                <span class="text-[11px] text-slate-400">Encapsulation, Polymorphism, Inheritance, Abstraction</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Database Management (DBMS)</span>
+                <span class="text-[11px] text-slate-400">Relational Schemas, Normalization, SQL Queries</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Operating Systems &amp; Networks</span>
+                <span class="text-[11px] text-slate-400">Threads, Concurrency, Virtual Memory, TCP/IP, OSI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Programming Languages -->
+          <div class="skill-card glass-panel-interactive p-6 rounded-2xl relative group" data-skill-cat="languages">
+            <div class="w-12 h-12 rounded-xl bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-2xl text-indigo-400 mb-4 group-hover:scale-110 transition-transform">
+              💻
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 flex items-center justify-between">
+              Languages
+              <span class="text-[11px] font-mono text-indigo-400 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-800/40">Multi-Paradigm</span>
+            </h3>
+            <p class="text-slate-400 text-xs mb-4">
+              Proficient in low-level algorithmic problem solving and high-level enterprise application development.
+            </p>
+            <div class="space-y-2.5">
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-slate-200 block">C++</span>
+                  <span class="text-[11px] text-slate-400">STL, Memory, Competitive Programming</span>
+                </div>
+                <span class="text-xs font-mono font-bold text-cyan-400">Advanced</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-slate-200 block">Java</span>
+                  <span class="text-[11px] text-slate-400">OOP Architecture, Collections, AICTE Intern</span>
+                </div>
+                <span class="text-xs font-mono font-bold text-indigo-400">Proficient</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-slate-200 block">Python</span>
+                  <span class="text-[11px] text-slate-400">Machine Learning, Pandas, EDA, Automation</span>
+                </div>
+                <span class="text-xs font-mono font-bold text-emerald-400">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. AI, ML & Data Science -->
+          <div class="skill-card glass-panel-interactive glass-panel-emerald p-6 rounded-2xl relative group" data-skill-cat="ai-ds">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-2xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform">
+              🤖
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 flex items-center justify-between">
+              AI &amp; Data Science
+              <span class="text-[11px] font-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Certified</span>
+            </h3>
+            <p class="text-slate-400 text-xs mb-4">
+              Building diagnostic inference pipelines from raw feature exploration to standardized model evaluation.
+            </p>
+            <div class="space-y-2.5">
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Scikit-learn &amp; Modeling</span>
+                <span class="text-[11px] text-slate-400">Logistic Regression, Classification, ROC-AUC, Pipeline</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Pandas &amp; NumPy</span>
+                <span class="text-[11px] text-slate-400">Dataframe wrangling, array vectorization, matrices</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">EDA &amp; Preprocessing</span>
+                <span class="text-[11px] text-slate-400">Correlation matrices, outlier handling, distribution analysis</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Feature Standardization</span>
+                <span class="text-[11px] text-slate-400">Statistical Imputation, Z-score, MinMax scaling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Full-Stack & Developer Tools -->
+          <div class="skill-card glass-panel-interactive p-6 rounded-2xl relative group" data-skill-cat="fullstack">
+            <div class="w-12 h-12 rounded-xl bg-teal-950/80 border border-teal-500/30 flex items-center justify-center text-2xl text-teal-400 mb-4 group-hover:scale-110 transition-transform">
+              🌐
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white mb-2 flex items-center justify-between">
+              Web &amp; Dev Tools
+              <span class="text-[11px] font-mono text-teal-400 bg-teal-950/60 px-2 py-0.5 rounded border border-teal-800/40">Full-Stack</span>
+            </h3>
+            <p class="text-slate-400 text-xs mb-4">
+              Modern frontend engineering, RESTful API design, and version-controlled collaborative workflows.
+            </p>
+            <div class="space-y-2.5">
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Frontend Engineering</span>
+                <span class="text-[11px] text-slate-400">HTML5 Semantic markup, CSS3 Flex/Grid, Vanilla JavaScript</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">RESTful APIs &amp; Networking</span>
+                <span class="text-[11px] text-slate-400">HTTP Methods, Status codes, JSON Payload handling</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Git &amp; GitHub</span>
+                <span class="text-[11px] text-slate-400">Branching strategies, commits, PR review, CI integration</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800">
+                <span class="text-xs font-semibold text-slate-200 block">Developer Environments</span>
+                <span class="text-[11px] text-slate-400">VS Code, Google Colab notebooks, Linux CLI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         AI & DATA SCIENCE FEATURED PROJECT & LIVE PIPELINE SIMULATOR
+         ========================================================================== -->
+    <section id="ai-datascience" class="py-20 px-4 sm:px-8 border-t border-slate-900 bg-gradient-to-b from-transparent via-emerald-950/10 to-transparent relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="space-y-3 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-xs font-semibold uppercase tracking-wider font-mono">
+              <span>🤖 Flagship Machine Learning Pipeline</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+              AI &amp; Data Science: Diabetes Prediction System
+            </h2>
+            <p class="text-slate-400 text-base">
+              An end-to-end Machine Learning pipeline utilizing Python, Scikit-learn, statistical data imputation, and feature standardization for diagnostic classification.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <button data-open-modal="pipeline-modal" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/40 flex items-center gap-2 transition-all">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              View Pipeline Architecture
+            </button>
+          </div>
+        </div>
+
+        <!-- Main ML Pipeline Card + Interactive Inference Simulator -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 border-emerald-500/30 shadow-2xl space-y-8">
+          
+          <!-- Top Architecture Badges -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+              <span class="text-xs font-mono text-slate-400 uppercase">1. Data Ingestion &amp; EDA</span>
+              <h4 class="text-sm font-bold text-white">Exploratory Analysis</h4>
+              <p class="text-[12px] text-slate-400">Correlation matrices, outlier detection, pairplot distributions.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+              <span class="text-xs font-mono text-emerald-400 uppercase">2. Preprocessing &amp; Imputation</span>
+              <h4 class="text-sm font-bold text-white">Statistical Cleaning</h4>
+              <p class="text-[12px] text-slate-400">Zero-replacement using median and class-conditioned imputation.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+              <span class="text-xs font-mono text-cyan-400 uppercase">3. Transformation</span>
+              <h4 class="text-sm font-bold text-white">Feature Standardization</h4>
+              <p class="text-[12px] text-slate-400">StandardScaler Z-score transformation to remove variance bias.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+              <span class="text-xs font-mono text-indigo-400 uppercase">4. Model Evaluation</span>
+              <h4 class="text-sm font-bold text-white">Logistic Regression</h4>
+              <p class="text-[12px] text-slate-400">Optimized log-odds classification with ROC-AUC &amp; F1 calibration.</p>
+            </div>
+          </div>
+
+          <!-- Interactive Live Inference Sandbox -->
+          <div class="bg-slate-950/90 rounded-2xl p-6 border border-slate-800 space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800/80 pb-4">
+              <div>
+                <h3 class="text-lg font-bold font-heading text-white flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Live Client-Side Diagnostic ML Predictor
+                </h3>
+                <p class="text-xs text-slate-400">
+                  Tweak patient physiological parameters below to trigger real-time feature standardization and logistic regression probability calculation.
+                </p>
+              </div>
+
+              <!-- Preset Profiles for Quick Recruiter Testing -->
+              <div class="flex items-center gap-2">
+                <span class="text-[11px] font-mono text-slate-400 hidden sm:inline">Presets:</span>
+                <button id="preset-low" class="px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-900 hover:bg-slate-800 text-emerald-300 border border-emerald-500/30 transition-colors">
+                  Healthy
+                </button>
+                <button id="preset-borderline" class="px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-300 border border-amber-500/30 transition-colors">
+                  Borderline
+                </button>
+                <button id="preset-high" class="px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-900 hover:bg-slate-800 text-rose-300 border border-rose-500/30 transition-colors">
+                  Elevated Risk
+                </button>
+              </div>
+            </div>
+
+            <!-- Sliders Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+              
+              <!-- Glucose -->
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs">
+                  <label for="ml-glucose" class="font-medium text-slate-300">Fasting Glucose</label>
+                  <span id="val-glucose" class="font-mono text-emerald-400 font-semibold">120 mg/dL</span>
+                </div>
+                <input type="range" id="ml-glucose" min="50" max="220" value="120" class="w-full">
+                <div class="flex justify-between text-[10px] text-slate-400">
+                  <span>50</span>
+                  <span>Normal: 70-130</span>
+                  <span>220</span>
+                </div>
+              </div>
+
+              <!-- Blood Pressure -->
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs">
+                  <label for="ml-bp" class="font-medium text-slate-300">Blood Pressure</label>
+                  <span id="val-bp" class="font-mono text-emerald-400 font-semibold">70 mmHg</span>
+                </div>
+                <input type="range" id="ml-bp" min="40" max="130" value="70" class="w-full">
+                <div class="flex justify-between text-[10px] text-slate-400">
+                  <span>40</span>
+                  <span>Diastolic</span>
+                  <span>130</span>
+                </div>
+              </div>
+
+              <!-- Insulin -->
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs">
+                  <label for="ml-insulin" class="font-medium text-slate-300">Serum Insulin</label>
+                  <span id="val-insulin" class="font-mono text-emerald-400 font-semibold">85 µU/mL</span>
+                </div>
+                <input type="range" id="ml-insulin" min="15" max="400" value="85" class="w-full">
+                <div class="flex justify-between text-[10px] text-slate-400">
+                  <span>15</span>
+                  <span>2-Hr Serum</span>
+                  <span>400</span>
+                </div>
+              </div>
+
+              <!-- BMI -->
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs">
+                  <label for="ml-bmi" class="font-medium text-slate-300">Body Mass Index (BMI)</label>
+                  <span id="val-bmi" class="font-mono text-emerald-400 font-semibold">25.4 kg/m²</span>
+                </div>
+                <input type="range" id="ml-bmi" min="15" max="55" step="0.1" value="25.4" class="w-full">
+                <div class="flex justify-between text-[10px] text-slate-400">
+                  <span>15</span>
+                  <span>Optimal: 18-24.9</span>
+                  <span>55</span>
+                </div>
+              </div>
+
+              <!-- Age -->
+              <div class="space-y-2">
+                <div class="flex justify-between text-xs">
+                  <label for="ml-age" class="font-medium text-slate-300">Patient Age</label>
+                  <span id="val-age" class="font-mono text-emerald-400 font-semibold">32 yrs</span>
+                </div>
+                <input type="range" id="ml-age" min="18" max="85" value="32" class="w-full">
+                <div class="flex justify-between text-[10px] text-slate-400">
+                  <span>18</span>
+                  <span>Demographic</span>
+                  <span>85</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Button & Output Diagnostics -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center pt-2">
+              
+              <!-- Button & Action -->
+              <div class="lg:col-span-4 flex flex-col gap-2">
+                <button id="btn-run-prediction" class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/25 transition-all flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  Run ML Inference Pipeline
+                </button>
+                <div class="text-[11px] text-slate-400 font-mono text-center">
+                  Instant calculation using trained model coefficients
+                </div>
+              </div>
+
+              <!-- Result Meter -->
+              <div class="lg:col-span-8 p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-mono text-slate-400">Classification Probability Score:</span>
+                    <span id="ml-probability-percent" class="text-lg font-bold font-mono text-emerald-400">28%</span>
+                  </div>
+                  <div id="ml-diagnostic-badge" class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-500/40">
+                    🟢 Low Risk Indicator
+                  </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="w-full h-3 rounded-full bg-slate-800 overflow-hidden relative">
+                  <div id="ml-probability-bar" class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-500 ease-out" style="width: 28%"></div>
+                </div>
+
+                <p id="ml-diagnostic-summary" class="text-xs text-slate-300">
+                  Glycemic indices and physiological markers indicate normal diagnostic stability. Standard maintenance profile recommended.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Real-Time Pipeline Trace Log -->
+            <div id="ml-pipeline-trace"></div>
+
+          </div>
+
+          <!-- Project Metadata & Links -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-slate-800 text-xs text-slate-400">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-mono text-white">Tech Stack:</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Python</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Scikit-learn</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Pandas</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">NumPy</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono">Logistic Regression</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-400 transition-colors">
+                <svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>View Code (GitHub)</span>
+              </a>
+              <button data-open-modal="pipeline-modal" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 transition-colors">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                <span>Notebook / Architecture Demo</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS & SDE SHOWCASE
+         ========================================================================== -->
+    <section id="sde-fullstack" class="py-20 px-4 sm:px-8 border-t border-slate-900 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="space-y-3 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider font-mono">
+              <span>💻 Software Development & Systems</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+              Featured Software Engineering Projects
+            </h2>
+            <p class="text-slate-400 text-base">
+              Showcasing practical engineering spanning machine learning pipelines, full-stack backends, and algorithmic problem-solving architectures.
+            </p>
+          </div>
+
+          <!-- Project Filter Tabs -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button class="project-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 border border-cyan-400 shadow-md shadow-cyan-500/20 transition-all" data-filter="all">
+              All Projects
+            </button>
+            <button class="project-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="ai-ds">
+              AI / Data Science
+            </button>
+            <button class="project-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="sde-backend">
+              SDE & Full-Stack
+            </button>
+            <button class="project-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all" data-filter="core-java">
+              Core CS & Java
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1: Diabetes Prediction ML System (AI / DS) -->
+          <div class="project-card glass-panel-interactive rounded-2xl overflow-hidden flex flex-col justify-between border-slate-800 transition-all duration-300" data-category="ai-ds">
+            <div>
+              <div class="p-5 bg-gradient-to-br from-emerald-950/40 via-slate-900/60 to-slate-950 border-b border-slate-800 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  AI / Data Science Focus
+                </span>
+                <span class="text-xs text-slate-400 font-mono">ML Pipeline</span>
+              </div>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold font-heading text-white group-hover:text-emerald-400 transition-colors">
+                  Diabetes Prediction System
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  End-to-end predictive machine learning pipeline incorporating exploratory data analysis (EDA), correlation mapping, statistical median imputation for zero values, and feature standardization for diagnostic classification.
+                </p>
+                <div class="space-y-1.5 pt-2">
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-emerald-400 font-bold">&check;</span> Handled sensor missingness via domain-aware imputation
+                  </div>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-emerald-400 font-bold">&check;</span> Z-score standardization for variance normalization
+                  </div>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-emerald-400 font-bold">&check;</span> Logistic Regression probability classification (ROC-AUC 0.82)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-emerald-300 border border-emerald-900/60">Python</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">Scikit-learn</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">Pandas</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">NumPy</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">
+                <a href="#ai-datascience" class="flex-1 py-2 text-center rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition-colors">
+                  Test Live Simulator
+                </a>
+                <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors" title="View on GitHub">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Scalable RESTful API & Microservices System (SDE & Full-Stack) -->
+          <div class="project-card glass-panel-interactive rounded-2xl overflow-hidden flex flex-col justify-between border-slate-800 transition-all duration-300" data-category="sde-backend">
+            <div>
+              <div class="p-5 bg-gradient-to-br from-cyan-950/40 via-slate-900/60 to-slate-950 border-b border-slate-800 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                  SDE &amp; Full-Stack Focus
+                </span>
+                <span class="text-xs text-slate-400 font-mono">Backend Systems</span>
+              </div>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold font-heading text-white group-hover:text-cyan-400 transition-colors">
+                  Scalable RESTful Backend &amp; Database Architecture
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Engineered clean, modular RESTful APIs utilizing robust design patterns (Controller-Service-Repository), relational schema normalization (3NF), JWT security, and structured JSON payloads.
+                </p>
+                <div class="space-y-1.5 pt-2">
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-cyan-400 font-bold">&check;</span> Normalized relational DBMS schema with indexed queries
+                  </div>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-cyan-400 font-bold">&check;</span> RESTful CRUD design conforming to OpenAPI standards
+                  </div>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-cyan-400 font-bold">&check;</span> Error handling middleware &amp; parameterized SQL security
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-cyan-300 border border-cyan-900/60">Java / Node.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">REST APIs</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">DBMS / SQL</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">Git</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">
+                <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 text-center rounded-lg bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40 text-xs font-semibold transition-colors">
+                  Repository &amp; Docs
+                </a>
+                <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors" title="View on GitHub">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Java Logic-Building & Systems Suite (EI Systems Internship Capstone) -->
+          <div class="project-card glass-panel-interactive rounded-2xl overflow-hidden flex flex-col justify-between border-slate-800 transition-all duration-300" data-category="core-java">
+            <div>
+              <div class="p-5 bg-gradient-to-br from-indigo-950/40 via-slate-900/60 to-slate-950 border-b border-slate-800 flex items-center justify-between">
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                  AICTE Internship Capstone
+                </span>
+                <span class="text-xs text-slate-400 font-mono">EI Systems</span>
+              </div>
+              <div class="p-6 space-y-3">
+                <h3 class="text-lg font-bold font-heading text-white group-hover:text-indigo-400 transition-colors">
+                  Java Programming Logic Building Suite
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Developed during the intensive Java programming internship at EI Systems (AICTE). Comprehensive modular codebase targeting core OOP concepts, custom data structures, and edge-case validation.
+                </p>
+                <div class="space-y-1.5 pt-2">
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-indigo-400 font-bold">&check;</span> Submitted technical report on Logic Building Practice
+                  </div>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-indigo-400 font-bold">&check;</span> Implemented polymorphic class hierarchies &amp; exceptions
+                  </div>
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="text-indigo-400 font-bold">&check;</span> Evaluated across unit test suites for edge cases
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-indigo-300 border border-indigo-900/60">Java SE</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">OOP</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">Collections</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 text-slate-300 border border-slate-800">AICTE</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-slate-800/80">
+                <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 text-center rounded-lg bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 border border-indigo-500/40 text-xs font-semibold transition-colors">
+                  Report &amp; Source
+                </a>
+                <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors" title="View on GitHub">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         COMPETITIVE CODING & PROBLEM SOLVING (SDE SHOWCASE)
+         ========================================================================== -->
+    <section id="competitive-coding" class="py-20 px-4 sm:px-8 border-t border-slate-900 bg-gradient-to-b from-transparent via-cyan-950/10 to-transparent relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Highlight Banner -->
+        <div class="glass-panel rounded-3xl p-8 sm:p-10 border-cyan-500/40 relative overflow-hidden shadow-2xl">
+          <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-semibold uppercase tracking-wider font-mono">
+                <span>🏆 Competitive Programming Milestone</span>
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+                Codeforces Pupil &bull; Max Rating: <span class="text-cyan-400">1242</span>
+              </h2>
+              <p class="text-slate-300 text-base leading-relaxed">
+                Active problem solver across <span class="text-cyan-300 font-semibold">LeetCode</span>, <span class="text-cyan-300 font-semibold">Codeforces</span>, and <span class="text-cyan-300 font-semibold">CodeChef</span>. Demonstrates strong logic-building, algorithm design under time constraints, and rigorous space-time optimization.
+              </p>
+              
+              <!-- Quick Metric Tags -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <span class="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs font-medium text-slate-200 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400"></span> High Algorithm Execution Speed
+                </span>
+                <span class="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs font-medium text-slate-200 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Asymptotic Analysis (Big-O)
+                </span>
+                <span class="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs font-medium text-slate-200 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-indigo-400"></span> C++ STL Mastery
+                </span>
+              </div>
+            </div>
+
+            <!-- Visual Rating Card -->
+            <div class="lg:col-span-4 bg-slate-950/80 rounded-2xl p-6 border border-slate-800 text-center space-y-4">
+              <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-3xl">
+                🏆
+              </div>
+              <div>
+                <span class="text-3xl font-extrabold font-heading text-cyan-400 block">1242</span>
+                <span class="text-xs uppercase font-mono tracking-widest text-slate-400">Codeforces Max Rating</span>
+              </div>
+              <div class="flex justify-center gap-2">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-300 border border-cyan-500/40">
+                  Pupil Rank
+                </span>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950 text-emerald-300 border border-emerald-500/40">
+                  Active Competitor
+                </span>
+              </div>
+              <a href="https://codeforces.com/profile/gautamsubham555" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-bold transition-all shadow-md">
+                Visit Codeforces Profile &rarr;
+              </a>
+              <div class="grid grid-cols-2 gap-2 pt-1">
+                <a href="https://leetcode.com/u/Subhamthegreat007/" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-amber-500/40 text-amber-300 text-xs font-medium transition-colors flex items-center justify-center gap-1.5">
+                  LeetCode &rarr;
+                </a>
+                <a href="https://www.codechef.com/users/canny_team_49" target="_blank" rel="noopener noreferrer" class="py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-amber-500/40 text-amber-400 text-xs font-medium transition-colors flex items-center justify-center gap-1.5">
+                  CodeChef &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Problem Solving Matrix & Core Patterns -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold">
+                01
+              </div>
+              <h3 class="text-base font-bold font-heading text-white">Dynamic Programming &amp; Recursion</h3>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Knapsack variants, memoization, bottom-up tabulation, optimal substructure identification, and state compression.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-bold">
+                02
+              </div>
+              <h3 class="text-base font-bold font-heading text-white">Graph Traversals &amp; Trees</h3>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Breadth-First Search (BFS), Depth-First Search (DFS), topological sorting, cycle detection, and binary tree traversals.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold">
+                03
+              </div>
+              <h3 class="text-base font-bold font-heading text-white">Searching &amp; Two Pointers</h3>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Binary search on answer spaces, sliding window algorithms, prefix sums, and fast pointer collision detection.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         PROFESSIONAL EXPERIENCE, EDUCATION & CERTIFICATIONS
+         ========================================================================== -->
+    <section id="experience" class="py-20 px-4 sm:px-8 border-t border-slate-900 relative">
+      <div class="max-w-7xl mx-auto space-y-16">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider font-mono">
+            <span>🎓 Career Trajectory & Credentials</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Professional Experience &amp; Academic Honors
+          </h2>
+          <p class="text-slate-400 text-base">
+            Formal training, hands-on industry internship at EI Systems (AICTE), and accredited certifications.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Experience & Education Column (Left 7) -->
+          <div class="lg:col-span-7 space-y-8">
+            <h3 class="text-xl font-bold font-heading text-white flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Experience &amp; Education Timeline
+            </h3>
+
+            <!-- Timeline Container -->
+            <div class="relative border-l-2 border-slate-800 ml-4 pl-6 sm:pl-8 space-y-10">
+
+              <!-- Item 1: EI Systems Internship -->
+              <div class="relative group">
+                <!-- Dot indicator -->
+                <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-cyan-400 group-hover:bg-cyan-400 transition-colors"></div>
+
+                <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-3">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                      <h4 class="text-lg font-bold font-heading text-white">Java Programming Intern</h4>
+                      <span class="text-xs font-semibold text-cyan-400">EI Systems (AICTE)</span>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-full bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">
+                      10 June 2025 – 5 August 2025
+                    </span>
+                  </div>
+
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Underwent rigorous task-based Java programming training covering core concepts, OOP principles, and advanced problem-solving methodologies.
+                  </p>
+
+                  <ul class="space-y-1.5 text-xs text-slate-400 list-disc list-inside">
+                    <li>Completed task-based Java programming training covering core concepts.</li>
+                    <li>Improved logic-building and problem-solving skills through coding assignments.</li>
+                    <li>Submitted a technical project report on <em>Java Programming Practice for Logic Building and Problem Solving</em>.</li>
+                  </ul>
+
+                  <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2 py-0.5 rounded bg-slate-900 text-[11px] font-mono text-cyan-300">Java SE</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-900 text-[11px] font-mono text-slate-300">OOP</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-900 text-[11px] font-mono text-slate-300">Logic Building</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-900 text-[11px] font-mono text-emerald-300">AICTE Approved</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: B.Tech Education -->
+              <div class="relative group">
+                <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-emerald-400 group-hover:bg-emerald-400 transition-colors"></div>
+
+                <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-3">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                      <h4 class="text-lg font-bold font-heading text-white">B.Tech in Computer Science &amp; Engineering</h4>
+                      <span class="text-xs font-semibold text-emerald-400">Delhi Skill and Entrepreneurship University</span>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-full bg-slate-900 text-[11px] font-mono text-slate-300 border border-slate-800">
+                      2023 – 2027 &bull; Delhi, India
+                    </span>
+                  </div>
+
+                  <div class="flex items-center gap-3 pt-1">
+                    <div class="px-3 py-1 rounded-lg bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 font-mono text-xs font-bold">
+                      CGPA: 7.1 / 10
+                    </div>
+                    <span class="text-xs text-slate-400">Undergraduate Computer Science</span>
+                  </div>
+
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Core Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, and Software Engineering.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Certifications & Achievements Column (Right 5) -->
+          <div class="lg:col-span-5 space-y-6">
+            <h3 class="text-xl font-bold font-heading text-white flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Verified Certifications
+            </h3>
+
+            <!-- Certification 1 -->
+            <div class="glass-panel p-5 rounded-2xl border-emerald-500/30 space-y-3 hover:border-emerald-400/60 transition-all">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-500/40 flex items-center justify-center text-xl text-emerald-400">
+                  🎓
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold font-heading text-white">Mastering Machine Learning</h4>
+                  <span class="text-xs text-emerald-400 font-medium">From Beginner to Expert &bull; GeeksforGeeks</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Comprehensive training covering supervised learning, unsupervised clustering, feature engineering, and model evaluation techniques.
+              </p>
+              <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+                <span>Issuer: GeeksforGeeks</span>
+                <span class="text-emerald-400 font-semibold">Verified Credential</span>
+              </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="glass-panel p-5 rounded-2xl border-cyan-500/30 space-y-3 hover:border-cyan-400/60 transition-all">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-cyan-950/80 border border-cyan-500/40 flex items-center justify-center text-xl text-cyan-400">
+                  🐍
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold font-heading text-white">Python for Data Science</h4>
+                  <span class="text-xs text-cyan-400 font-medium">Data Analysis &amp; Manipulation &bull; GeeksforGeeks</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Practical mastery of Pandas dataframes, NumPy numerical matrices, data cleaning, and statistical visualizations.
+              </p>
+              <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+                <span>Issuer: GeeksforGeeks</span>
+                <span class="text-cyan-400 font-semibold">Verified Credential</span>
+              </div>
+            </div>
+
+            <!-- Achievements Card -->
+            <div class="glass-panel p-5 rounded-2xl border-slate-800 space-y-3">
+              <h4 class="text-sm font-bold font-heading text-white flex items-center gap-2">
+                <span class="text-amber-400">⚡</span> Key Highlights Summary
+              </h4>
+              <div class="space-y-2 text-xs text-slate-300">
+                <div class="flex items-start gap-2">
+                  <span class="text-cyan-400 font-bold">&bull;</span>
+                  <span><strong>Codeforces Pupil:</strong> Max Rating 1242 achieved through algorithmic problem solving.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-400 font-bold">&bull;</span>
+                  <span><strong>Active Problem Solver:</strong> Regular competitor on Codeforces, LeetCode, and CodeChef.</span>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span class="text-indigo-400 font-bold">&bull;</span>
+                  <span><strong>AICTE Certified:</strong> Java Programming Intern at EI Systems with logic building report.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         CONTACT & FOOTER SECTION
+         ========================================================================== -->
+    <section id="contact" class="py-20 px-4 sm:px-8 border-t border-slate-900 bg-gradient-to-b from-transparent to-slate-950 relative">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider font-mono">
+            <span>📬 Get In Touch</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-tight">
+            Let's Build Scalable Solutions Together
+          </h2>
+          <p class="text-slate-400 text-base">
+            Currently available for Software Development Engineering (SDE) internships, full-stack systems roles, and AI/ML opportunities.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Direct Contact Information (Left 5) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-4">
+              <h3 class="text-lg font-bold font-heading text-white">Direct Communication</h3>
+              <p class="text-xs text-slate-400">
+                Feel free to email me directly or reach out via phone/WhatsApp. I respond promptly to engineering inquiries and recruiter opportunities.
+              </p>
+
+              <div class="space-y-3 pt-2">
+                
+                <!-- Email Card -->
+                <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between group hover:border-cyan-500/40 transition-colors">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="text-[11px] font-mono text-slate-400 block">Email Address</span>
+                      <a href="mailto:gautamsubham777@gmail.com" class="text-xs font-semibold text-slate-200 hover:text-cyan-400 transition-colors">
+                        gautamsubham777@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <button data-copy-text="gautamsubham777@gmail.com" data-copy-label="Email" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-cyan-400 transition-colors" title="Copy Email">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between group hover:border-emerald-500/40 transition-colors">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span class="text-[11px] font-mono text-slate-400 block">Phone &bull; WhatsApp</span>
+                      <a href="tel:+919555648657" class="text-xs font-semibold text-slate-200 hover:text-emerald-400 transition-colors">
+                        +91 9555648657
+                      </a>
+                    </div>
+                  </div>
+                  <button data-copy-text="+919555648657" data-copy-label="Phone Number" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-emerald-400 transition-colors" title="Copy Phone Number">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Location Card -->
+                <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-indigo-950/80 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-mono text-slate-400 block">Location</span>
+                    <span class="text-xs font-semibold text-slate-200">Delhi, India &bull; Open to Remote &amp; Relocation</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Quick Profiles Grid -->
+            <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-400 block">External Coding Profiles</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
+                <a href="https://codeforces.com/profile/gautamsubham555" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-cyan-300 border border-slate-800 flex items-center justify-between transition-colors">
+                  <span>Codeforces</span>
+                  <span class="font-mono text-[10px] bg-cyan-950 px-1.5 py-0.5 rounded">1242</span>
+                </a>
+                <a href="https://leetcode.com/u/Subhamthegreat007/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-300 border border-slate-800 flex items-center justify-between transition-colors">
+                  <span>LeetCode</span>
+                  <span class="font-mono text-[10px] bg-amber-950 px-1.5 py-0.5 rounded">Active</span>
+                </a>
+                <a href="https://www.codechef.com/users/canny_team_49" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-amber-400 border border-slate-800 flex items-center justify-between transition-colors">
+                  <span>CodeChef</span>
+                  <span class="font-mono text-[10px] bg-amber-950 px-1.5 py-0.5 rounded">Active</span>
+                </a>
+                <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 flex items-center justify-between transition-colors">
+                  <span>GitHub</span>
+                  <span class="font-mono text-[10px] bg-slate-800 px-1.5 py-0.5 rounded">Repos</span>
+                </a>
+                <a href="https://www.linkedin.com/in/subham130304/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-blue-300 border border-slate-800 flex items-center justify-between transition-colors">
+                  <span>LinkedIn</span>
+                  <span class="font-mono text-[10px] bg-blue-950 px-1.5 py-0.5 rounded">Connect</span>
+                </a>
+                <button type="button" data-open-modal="resume-modal" class="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-emerald-300 border border-slate-800 flex items-center justify-between transition-colors text-left">
+                  <span>Resume</span>
+                  <span class="font-mono text-[10px] bg-emerald-950 px-1.5 py-0.5 rounded text-emerald-400">PDF</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form (Right 7) -->
+          <div class="lg:col-span-7">
+            <div class="glass-panel p-6 sm:p-8 rounded-3xl border-slate-800 space-y-6">
+              
+              <div>
+                <h3 class="text-xl font-bold font-heading text-white">Send Subham a Message</h3>
+                <p class="text-xs text-slate-400 mt-1">
+                  Have an open role, technical project collaboration, or interview query? Fill out the form below.
+                </p>
+              </div>
+
+              <form id="contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Name -->
+                  <div class="space-y-1.5">
+                    <label for="contact-name" class="block text-xs font-semibold text-slate-300">
+                      Your Name <span class="text-cyan-400">*</span>
+                    </label>
+                    <input type="text" id="contact-name" required placeholder="e.g. Alex Henderson" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                  </div>
+
+                  <!-- Email -->
+                  <div class="space-y-1.5">
+                    <label for="contact-email" class="block text-xs font-semibold text-slate-300">
+                      Email Address <span class="text-cyan-400">*</span>
+                    </label>
+                    <input type="email" id="contact-email" required placeholder="alex@techrecruiter.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                  </div>
+                </div>
+
+                <!-- Subject -->
+                <div class="space-y-1.5">
+                  <label for="contact-subject" class="block text-xs font-semibold text-slate-300">
+                    Subject / Topic <span class="text-cyan-400">*</span>
+                  </label>
+                  <input type="text" id="contact-subject" required placeholder="SDE / ML Internship Opportunity" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all">
+                </div>
+
+                <!-- Message -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between items-center">
+                    <label for="contact-message" class="block text-xs font-semibold text-slate-300">
+                      Message <span class="text-cyan-400">*</span>
+                    </label>
+                    <span id="char-count" class="text-[10px] font-mono text-slate-500">0 / 500</span>
+                  </div>
+                  <textarea id="contact-message" rows="4" maxlength="500" required placeholder="Hi Subham, we came across your developer portfolio and your machine learning diabetes pipeline..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 text-slate-100 text-sm placeholder-slate-500 outline-none transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="contact-submit-btn" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/25 transition-all flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  <span>Send Message</span>
+                </button>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="py-8 px-4 sm:px-8 border-t border-slate-800/80 bg-slate-950/50 backdrop-blur-xl relative z-10 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      
+      <!-- Brand & Copyright -->
+      <div class="flex items-center gap-2">
+        <span class="font-heading font-bold text-white text-sm">Subham<span class="text-cyan-400">.dev</span></span>
+        <span>&bull;</span>
+        <span>&copy; 2026 Subham. Built with passion.</span>
+      </div>
+
+      <!-- Tech Stack Credit & Quick Back to Top -->
+      <div class="flex items-center gap-6">
+        <span class="text-[11px] text-slate-500">HTML5 &bull; Tailwind CSS &bull; Vanilla JS &bull; Glassmorphism</span>
+        <a href="#hero" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-cyan-400 transition-colors" title="Back to Top">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================================================
+       MODALS: RESUME VIEWER & PRINTABLE FORMAT
+       ========================================================================== -->
+  <dialog id="resume-modal" class="rounded-3xl bg-slate-950 text-slate-100 p-0 border border-slate-800 shadow-2xl max-w-3xl w-[95%] max-h-[90vh] overflow-y-auto outline-none backdrop:backdrop-blur-md">
+    <div class="p-6 sm:p-8 space-y-6">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-cyan-950 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold">
+            📄
+          </div>
+          <div>
+            <h3 class="text-lg font-bold font-heading text-white">Subham's Developer Resume</h3>
+            <span class="text-xs text-slate-400">Software Development Engineer &bull; AI / ML Specialist</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="btn-print-resume" class="px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-semibold flex items-center gap-1.5 transition-colors">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            Print / Save PDF
+          </button>
+          <button data-close-modal class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Sheet Container -->
+      <div class="printable-resume p-6 sm:p-8 rounded-2xl bg-white text-slate-900 space-y-6 shadow-inner font-sans text-xs">
+        
+        <!-- Header -->
+        <div class="text-center space-y-1.5 border-b border-slate-200 pb-4">
+          <h1 class="text-2xl font-extrabold tracking-wide uppercase text-slate-950 font-heading">SUBHAM</h1>
+          <p class="text-slate-600 font-mono text-[11px]">
+            <a href="mailto:gautamsubham777@gmail.com" class="hover:text-cyan-700 underline">gautamsubham777@gmail.com</a> &bull; <a href="tel:+919555648657" class="hover:text-cyan-700 underline">+91 9555648657</a> &bull; Delhi, India
+          </p>
+          <p class="text-slate-700 font-mono text-[11px]">
+            <a href="https://www.linkedin.com/in/subham130304/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 underline">LinkedIn</a> &bull; <a href="https://github.com/gautamsubham555" target="_blank" rel="noopener noreferrer" class="hover:text-slate-950 underline">GitHub</a> &bull; <a href="https://codeforces.com/profile/gautamsubham555" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-700 underline">Codeforces (Pupil 1242)</a> &bull; <a href="https://www.codechef.com/users/canny_team_49" target="_blank" rel="noopener noreferrer" class="hover:text-amber-700 underline">CodeChef</a> &bull; <a href="https://leetcode.com/u/Subhamthegreat007/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-600 underline">LeetCode</a>
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="space-y-1.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-0.5">Education</h2>
+          <div class="flex justify-between font-semibold text-slate-900">
+            <span>B.Tech in Computer Science &amp; Engineering</span>
+            <span>2023 – 2027</span>
+          </div>
+          <div class="flex justify-between text-slate-600">
+            <span>Delhi Skill and Entrepreneurship University</span>
+            <span>CGPA: 7.1 / 10</span>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="space-y-1.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-0.5">Technical Skills</h2>
+          <div class="space-y-1 text-slate-800">
+            <p><strong>Languages:</strong> C++, Java, Python</p>
+            <p><strong>Core CS:</strong> Data Structures &amp; Algorithms, OOP, DBMS, Operating Systems, Computer Networks</p>
+            <p><strong>Machine Learning:</strong> Scikit-learn, Pandas, NumPy, EDA, Data Preprocessing, Feature Standardization</p>
+            <p><strong>Web &amp; Tools:</strong> HTML, CSS, JavaScript, RESTful APIs, Git, GitHub, VS Code, Google Colab</p>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="space-y-1.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-0.5">Projects</h2>
+          <div class="space-y-1">
+            <div class="flex justify-between font-bold text-slate-900">
+              <span>Diabetes Prediction using Logistic Regression</span>
+              <span class="text-cyan-700">[Machine Learning Pipeline]</span>
+            </div>
+            <ul class="list-disc list-inside space-y-0.5 text-slate-700">
+              <li>Built an end-to-end machine learning pipeline using Python and Scikit-learn.</li>
+              <li>Performed EDA, preprocessing, feature standardization, and correlation analysis.</li>
+              <li>Handled missing values and sensor anomalies using statistical imputation techniques.</li>
+              <li>Trained and evaluated a Logistic Regression model for diabetes diagnostic prediction.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Internship -->
+        <div class="space-y-1.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-0.5">Internship</h2>
+          <div class="flex justify-between font-bold text-slate-900">
+            <span>Java Programming Intern — EI Systems (AICTE)</span>
+            <span>10 June 2025 – 5 August 2025</span>
+          </div>
+          <ul class="list-disc list-inside space-y-0.5 text-slate-700">
+            <li>Completed task-based Java programming training covering core concepts and OOP architecture.</li>
+            <li>Improved logic-building and problem-solving skills through coding assignments.</li>
+            <li>Submitted a report on <em>Java Programming Practice for Logic Building and Problem Solving</em>.</li>
+          </ul>
+        </div>
+
+        <!-- Certifications -->
+        <div class="space-y-1.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-0.5">Certifications</h2>
+          <ul class="list-disc list-inside space-y-0.5 text-slate-700">
+            <li>Mastering Machine Learning: From Beginner to Expert — GeeksforGeeks</li>
+            <li>Python for Data Science — GeeksforGeeks</li>
+          </ul>
+        </div>
+
+        <!-- Achievements -->
+        <div class="space-y-1.5">
+          <h2 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-0.5">Achievements</h2>
+          <ul class="list-disc list-inside space-y-0.5 text-slate-700">
+            <li>Codeforces Pupil &mdash; Max Rating 1242 (<a href="https://codeforces.com/profile/gautamsubham555" target="_blank" rel="noopener noreferrer" class="text-cyan-700 hover:underline">gautamsubham555</a>)</li>
+            <li>Active problem solver on <a href="https://codeforces.com/profile/gautamsubham555" target="_blank" rel="noopener noreferrer" class="text-cyan-700 hover:underline">Codeforces</a>, <a href="https://leetcode.com/u/Subhamthegreat007/" target="_blank" rel="noopener noreferrer" class="text-amber-700 hover:underline">LeetCode</a>, and <a href="https://www.codechef.com/users/canny_team_49" target="_blank" rel="noopener noreferrer" class="text-amber-800 hover:underline">CodeChef</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="flex justify-end gap-3 pt-2 border-t border-slate-800">
+        <button data-close-modal class="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-semibold transition-colors">
+          Close Preview
+        </button>
+      </div>
+
+    </div>
+  </dialog>
+
+
+  <!-- ==========================================================================
+       MODAL: ML PIPELINE ARCHITECTURE DEEP-DIVE
+       ========================================================================== -->
+  <dialog id="pipeline-modal" class="rounded-3xl bg-slate-950 text-slate-100 p-0 border border-emerald-500/30 shadow-2xl max-w-2xl w-[95%] max-h-[85vh] overflow-y-auto outline-none backdrop:backdrop-blur-md">
+    <div class="p-6 sm:p-8 space-y-6">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-950 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold">
+            🤖
+          </div>
+          <div>
+            <h3 class="text-lg font-bold font-heading text-white">Diabetes Prediction Pipeline Architecture</h3>
+            <span class="text-xs text-emerald-400">Scikit-learn &bull; Statistical Imputation &bull; Feature Standardization</span>
+          </div>
+        </div>
+        <button data-close-modal class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-xs text-slate-300">
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 1. Problem Formulation &amp; Dataset
+          </h4>
+          <p class="text-slate-400 leading-relaxed">
+            The system predicts whether a patient has diabetes based on diagnostic measurements (Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, and Age).
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span> 2. Handling Missing Biological Values
+          </h4>
+          <p class="text-slate-400 leading-relaxed">
+            In biological datasets, zero values in fields like Blood Pressure, Glucose, or Insulin represent sensor absence or unrecorded data rather than true physiological zeros. Subham implemented statistical median imputation conditioned on class labels to prevent data bias.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span> 3. Z-Score Feature Standardization
+          </h4>
+          <p class="text-slate-400 leading-relaxed">
+            Because features vary across differing measurement scales (Insulin up to 800, Glucose up to 200, BMI around 30), features were standardized using <code class="text-cyan-300">z = (x - μ) / σ</code>, ensuring gradient descent converges efficiently in Logistic Regression.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <h4 class="font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span> 4. Model Performance Metrics
+          </h4>
+          <div class="grid grid-cols-3 gap-2 font-mono text-center pt-1">
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-emerald-400 font-bold block text-sm">78.4%</span>
+              <span class="text-[10px] text-slate-500">Test Accuracy</span>
+            </div>
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-cyan-400 font-bold block text-sm">0.82</span>
+              <span class="text-[10px] text-slate-500">ROC-AUC Score</span>
+            </div>
+            <div class="p-2 bg-slate-950 rounded border border-slate-800">
+              <span class="text-indigo-400 font-bold block text-sm">0.74</span>
+              <span class="text-[10px] text-slate-500">F1-Score</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end pt-2 border-t border-slate-800">
+        <button data-close-modal class="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold transition-colors">
+          Got it
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+
+  <!-- ==========================================================================
+       MODAL: CONTACT SUCCESS CONFIRMATION
+       ========================================================================== -->
+  <dialog id="contact-success-modal" class="rounded-3xl bg-slate-950 text-slate-100 p-0 border border-cyan-500/40 shadow-2xl max-w-md w-[90%] outline-none backdrop:backdrop-blur-md">
+    <div class="p-6 sm:p-8 text-center space-y-5">
+      <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-3xl">
+        🎉
+      </div>
+      <div class="space-y-1.5">
+        <h3 class="text-xl font-bold font-heading text-white">Message Dispatched!</h3>
+        <p class="text-xs text-slate-300">
+          Thank you for reaching out! Subham has received your message and will review your note promptly.
+        </p>
+      </div>
+      <div class="p-3 bg-slate-900 rounded-xl border border-slate-800 text-xs font-mono text-cyan-300">
+        Direct Email: gautamsubham777@gmail.com
+      </div>
+      <button data-close-modal class="w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition-colors">
+        Done
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

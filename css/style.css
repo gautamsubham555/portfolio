@@ -1,0 +1,439 @@
+/* ==========================================================================
+   SUBHAM.DEV - CUSTOM DESIGN SYSTEM & GLASSMORPHISM STYLES
+   Modern Developer Dark Mode | Electric Cyan & Emerald Green Accents
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --bg-primary: #0a1128;
+  --bg-secondary: #0f1c3f;
+  --bg-card: rgba(14, 25, 48, 0.55);
+  --bg-card-hover: rgba(22, 38, 72, 0.7);
+  
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-cyan: rgba(6, 182, 212, 0.4);
+  --border-emerald: rgba(16, 185, 129, 0.4);
+  --border-indigo: rgba(99, 102, 241, 0.4);
+  --border-sky: rgba(56, 189, 248, 0.4);
+  
+  --accent-cyan: #06b6d4;
+  --accent-cyan-light: #22d3ee;
+  --accent-sky: #38bdf8;
+  --accent-sky-light: #7dd3fc;
+  --accent-indigo: #6366f1;
+  --accent-violet: #a855f7;
+  --accent-emerald: #10b981;
+  --accent-emerald-light: #34d399;
+  --accent-amber: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: #f8fafc;
+  color-scheme: dark;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1128;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Typography Helpers */
+.font-heading {
+  font-family: var(--font-heading);
+}
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(14, 25, 48, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(56, 189, 248, 0.05);
+}
+
+.glass-panel-interactive {
+  background: rgba(14, 25, 48, 0.5);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-interactive:hover {
+  background: rgba(22, 38, 72, 0.72);
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -10px rgba(56, 189, 248, 0.25), 0 0 20px -5px rgba(168, 85, 247, 0.15);
+}
+
+.glass-panel-emerald:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 16px 36px -10px rgba(16, 185, 129, 0.25);
+}
+
+.glass-panel-indigo:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 16px 36px -10px rgba(99, 102, 241, 0.25);
+}
+
+.glass-panel-amber:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 16px 36px -10px rgba(245, 158, 11, 0.25);
+}
+
+/* Gradient Text Utilities */
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-hero {
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 50%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-dual {
+  background: linear-gradient(135deg, #06b6d4 0%, #6366f1 50%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Neon Glows */
+.glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.4);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.4);
+}
+
+.glow-indigo {
+  box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.4);
+}
+
+/* Pulsing Dots */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.15);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   MULTI-COLOR GRADIENT MESH BACKGROUND SYSTEM
+   Combines Light Blue (#38bdf8), Cyan (#06b6d4), Violet (#a855f7), & Emerald (#10b981)
+   ========================================================================== */
+.bg-mesh-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background: 
+    radial-gradient(circle at 12% 15%, rgba(56, 189, 248, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 88% 18%, rgba(168, 85, 247, 0.24) 0%, transparent 45%),
+    radial-gradient(circle at 80% 82%, rgba(16, 185, 129, 0.2) 0%, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(6, 182, 212, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 50% 48%, rgba(99, 102, 241, 0.16) 0%, transparent 55%),
+    linear-gradient(135deg, #091326 0%, #0d1b38 45%, #0f1c3f 75%, #0a1128 100%);
+}
+
+/* Floating Ambient Orbs */
+.mesh-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  opacity: 0.7;
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* Orb 1: Light Sky Blue */
+.mesh-orb-1 {
+  top: -6%;
+  left: 8%;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.45) 0%, rgba(6, 182, 212, 0.2) 65%, transparent 100%);
+  animation: float-mesh-1 22s ease-in-out infinite alternate;
+}
+
+/* Orb 2: Radiant Violet */
+.mesh-orb-2 {
+  top: 22%;
+  right: -6%;
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.38) 0%, rgba(99, 102, 241, 0.18) 65%, transparent 100%);
+  animation: float-mesh-2 26s ease-in-out infinite alternate;
+}
+
+/* Orb 3: Radiant Emerald */
+.mesh-orb-3 {
+  bottom: 8%;
+  left: 18%;
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.35) 0%, rgba(5, 150, 105, 0.15) 65%, transparent 100%);
+  animation: float-mesh-3 24s ease-in-out infinite alternate;
+}
+
+/* Orb 4: Electric Cyan & Sky Blue Hybrid */
+.mesh-orb-4 {
+  bottom: 25%;
+  right: 22%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, rgba(139, 92, 246, 0.22) 65%, transparent 100%);
+  animation: float-mesh-4 28s ease-in-out infinite alternate;
+}
+
+@keyframes float-mesh-1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(70px, 90px) scale(1.12); }
+  100% { transform: translate(-40px, 40px) scale(0.94); }
+}
+
+@keyframes float-mesh-2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-90px, -70px) scale(1.15); }
+  100% { transform: translate(50px, 50px) scale(0.9); }
+}
+
+@keyframes float-mesh-3 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-60px, -80px) scale(1.1); }
+  100% { transform: translate(70px, 30px) scale(0.92); }
+}
+
+@keyframes float-mesh-4 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(80px, -60px) scale(1.14); }
+  100% { transform: translate(-40px, 70px) scale(0.95); }
+}
+
+/* Palette Presets for Mesh Background */
+body.theme-oceanic .mesh-orb-1 {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.52) 0%, rgba(6, 182, 212, 0.25) 65%, transparent 100%);
+}
+body.theme-oceanic .mesh-orb-2 {
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.48) 0%, rgba(14, 165, 233, 0.22) 65%, transparent 100%);
+}
+body.theme-oceanic .mesh-orb-3 {
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.42) 0%, rgba(13, 148, 136, 0.2) 65%, transparent 100%);
+}
+body.theme-oceanic .mesh-orb-4 {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.42) 0%, rgba(45, 212, 191, 0.2) 65%, transparent 100%);
+}
+
+body.theme-sunset .mesh-orb-1 {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.48) 0%, rgba(147, 51, 234, 0.28) 65%, transparent 100%);
+}
+body.theme-sunset .mesh-orb-2 {
+  background: radial-gradient(circle, rgba(244, 63, 94, 0.42) 0%, rgba(168, 85, 247, 0.22) 65%, transparent 100%);
+}
+body.theme-sunset .mesh-orb-3 {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.38) 0%, rgba(217, 70, 239, 0.2) 65%, transparent 100%);
+}
+body.theme-sunset .mesh-orb-4 {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.42) 0%, rgba(56, 189, 248, 0.22) 65%, transparent 100%);
+}
+
+/* Subtle Glowing Cyber Grid */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 85, 247, 0.04) 1px, transparent 1px);
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.18) 0%, rgba(168, 85, 247, 0.1) 40%, transparent 70%);
+}
+
+.bg-radial-emerald {
+  background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.14) 0%, transparent 65%);
+}
+
+/* Custom Interactive Range Sliders for Live ML Demo */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #1e293b;
+  border-radius: 9999px;
+  height: 6px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+  border: 2px solid #030712;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: #34d399;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+  border: 2px solid #030712;
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  animation: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Floating animation */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+/* Modal Transitions */
+dialog[open] {
+  animation: modal-zoom 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+dialog::backdrop {
+  background: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+@keyframes modal-zoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Print Styles for Resume */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  header, footer, #bg-canvas, #toast-container, .no-print, button, nav {
+    display: none !important;
+  }
+  .printable-resume {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+  .printable-resume * {
+    color: #111827 !important;
+    border-color: #e5e7eb !important;
+    background: transparent !important;
+  }
+}
